@@ -1,3 +1,4 @@
+#small example of using tmdb API
 import tmdbsimple
 tmdbsimple.API_KEY = '0d77f0dc778bfd9a40a934c56e81b487'
 search = tmdbsimple.Search()
