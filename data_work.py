@@ -4,6 +4,10 @@ tmdb.API_KEY = '0d77f0dc778bfd9a40a934c56e81b487'
 
 
 def analise_data(lst):
+    """
+    Function for data analysis
+    (list) -> (str)
+    """
     date_list = []
     time_list = []
     budget_list = []
@@ -72,6 +76,10 @@ def analise_data(lst):
 
 
 def get_data(n, genres):
+    """
+    Function for search an information about films of some genre
+    (int), (str) -> (str)
+    """
     film_dict = dict()
     a = tmdb.Movies().top_rated(page=n)
     b = a.get('results')
